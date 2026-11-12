@@ -31,9 +31,11 @@ import os
 import platform
 import sys
 from pathlib import Path
-
 import torch
-
+import sys
+from pathlib import Path
+# 将当前脚本所在目录（项目根目录）添加到 Python 搜索路径的最前面
+sys.path.insert(0, str(Path(__file__).parent))
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # YOLOv5 root directory
 if str(ROOT) not in sys.path:
