@@ -1,0 +1,24 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# 运行产物（不传）
+runs/
+shared_results/
+wandb/
+*.log
+
+# 忽略其他无关权重，但保留我们需要的
+yolov5s.pt
+*.pth
+# 强行允许上传 weights 里的 best_fixed.pt
+!weights/best_fixed.pt
